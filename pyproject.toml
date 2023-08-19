@@ -6,16 +6,18 @@ authors = ["Anthony Miyaguchi <acmiyaguchi@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.13"
-opencv-python = "^4.8.0.76"
-matplotlib = "^3.7.2"
-pandas = "^2.0.3"
-pytesseract = "^0.3.10"
-scipy = "^1.11.2"
-tqdm = "^4.66.1"
+python = ">=3.9,<3.11"
+opencv-python = "*"
+matplotlib = "*"
+pandas = "*"
+pytesseract = "*"
+scipy = "*"
+tqdm = "*"
+scikit-learn = "*"
+umap-learn = "*"
 
 [tool.poetry.dev-dependencies]
-jupyterlab = "^4.0.5"
+jupyterlab = "*"
 
 [build-system]
 requires = ["poetry-core"]
