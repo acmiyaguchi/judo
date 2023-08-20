@@ -17,6 +17,7 @@ scikit-learn = "*"
 umap-learn = "*"
 pygifsicle = "^1.0.7"
 ffmpeg-python = "^0.2.0"
+editdistance = "^0.6.2"
 
 [tool.poetry.dev-dependencies]
 jupyterlab = "*"

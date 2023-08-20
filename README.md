@@ -9,5 +9,5 @@ This repository is for preserving code related to my studies in judo.
 ## dependencies
 
 ```bash
-brew install gifsicle tesseract ffmpeg
+brew install tesseract ffmpeg gifski
 ```
