@@ -1,6 +1,16 @@
-<script></script>
+<script>
+  let entries = ["home", "waza"];
+</script>
 
 <main>
+  <nav>
+    <div>
+      {#each entries as entry}
+        <a href={entry == "home" ? "/" : `/${entry}`}>[{entry}]</a>
+        <span />
+      {/each}
+    </div>
+  </nav>
   <slot />
 </main>
 
