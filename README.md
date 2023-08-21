@@ -9,5 +9,14 @@ This repository is for preserving code related to my studies in judo.
 ## dependencies
 
 ```bash
-brew install tesseract ffmpeg gifski
+brew install tesseract ffmpeg gifski b2-tools
+```
+
+To upload files into the public backblaze bucket:
+
+```bash
+b2 authorize-account
+
+# sync everything but the tmp directory
+b2 sync ./data b2://acm-judo/data --excludeDirRegex data/tmp
 ```

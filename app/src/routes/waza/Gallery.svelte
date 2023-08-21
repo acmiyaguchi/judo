@@ -1,5 +1,5 @@
 <script>
-  import { groupBy, sortBy } from "lodash-es";
+  import { groupBy } from "lodash-es";
   import GalleryImage from "./GalleryImage.svelte";
 
   export let waza = [];

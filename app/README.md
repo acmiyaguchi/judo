@@ -4,7 +4,9 @@ The website portion to host information about judo through my research.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+VITE_STATIC_HOST=https://acm-judo.s3.us-west-004.backblazeb2.com
+```
 
 ```bash
 npm run dev
