@@ -4,29 +4,27 @@
 
   export let waza = {};
   let isInView;
-  const options = {
-    rootMargin: "50px",
-    unobserveOnEnter: true,
-  };
 
-  const handleChange = ({ detail }) => (isInView = detail.inView);
-
-  function gifName(row, masked = false) {
-    let category_index = row.category_index.toString().padStart(2, "0");
-    let name = `${row.category}_${category_index}_${row.name}`;
-    if (masked) {
-      return staticHostData(`data/clips-gif-masked/${name}_masked.gif`);
-    } else {
-      return staticHostData(`data/clips-gif/${name}.gif`);
-    }
+  function gifName(waza, masked = false) {
+    let parent = masked ? "waza-masked-gif" : "waza-gif";
+    let path = `data/clips/${parent}/${waza.filename}`;
+    return staticHostData(path, true);
   }
 </script>
 
-<div use:inview={options} on:inview_change={handleChange}>
+<div
+  use:inview={{
+    rootMargin: "50px",
+    unobserveOnEnter: true,
+  }}
+  on:inview_change={({ detail }) => (isInView = detail.inView)}
+>
   {#if isInView}
     <img src={gifName(waza)} alt={waza.name} />
   {:else}
-    <div class="placeholder" />
+    <div class="placeholder">
+      <i>loading...</i>
+    </div>
   {/if}
 </div>
 

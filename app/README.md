@@ -5,7 +5,7 @@ The website portion to host information about judo through my research.
 ## Developing
 
 ```bash
-VITE_STATIC_HOST=https://acm-judo.s3.us-west-004.backblazeb2.com
+export VITE_STATIC_HOST=https://acm-judo.s3.us-west-004.backblazeb2.com
 ```
 
 ```bash

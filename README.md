@@ -17,6 +17,6 @@ To upload files into the public backblaze bucket:
 ```bash
 b2 authorize-account
 
-# sync everything but the tmp directory
-b2 sync ./data b2://acm-judo/data --excludeDirRegex data/tmp
+# sync everything but the tmp directory and DS_Store files
+b2 sync ./data b2://acm-judo/data --excludeDirRegex data/tmp --excludeRegex DS_Store
 ```

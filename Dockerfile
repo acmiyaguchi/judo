@@ -10,5 +10,3 @@ COPY ./app ./
 ARG VITE_STATIC_HOST=https://nginx:4000
 ENV VITE_STATIC_HOST=${VITE_STATIC_HOST}
 ENV PORT=${PORT:-8000}
-RUN npm run build
-CMD node build/index.js
