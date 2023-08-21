@@ -2,6 +2,24 @@
   let entries = ["home", "waza"];
 </script>
 
+<svelte:head>
+  {#if process.env.NODE_ENV === "production"}
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-43NJXZGJ1M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-43NJXZGJ1M");
+    </script>
+  {/if}
+</svelte:head>
+
 <main>
   <nav>
     <div>
