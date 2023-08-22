@@ -8,6 +8,8 @@
   let grouping = "category";
 </script>
 
+<h2>options</h2>
+
 <!-- radio dial for choosing the ordering -->
 <div class="option">
   <div>
