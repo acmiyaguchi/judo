@@ -1,6 +1,5 @@
 <script>
   import Fuse from "fuse.js";
-  import { filter } from "lodash-es";
   export let data = [];
   export let keys = [];
   export let filteredData = [];
