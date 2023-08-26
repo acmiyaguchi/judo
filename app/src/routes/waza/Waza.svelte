@@ -6,6 +6,7 @@
   let filteredData = [];
   let queryTerm = "";
   let grouping = "category";
+  let showMore = false;
 </script>
 
 <h2>options</h2>
@@ -34,13 +35,17 @@
       <label for="name">gokyo-no-waza</label>
     </div>
   {/if}
+  <div>
+    <input type="checkbox" bind:checked={showMore} id="showMore" />
+    <label for="showMore">show descriptions by default</label>
+  </div>
 </div>
 
 {#if queryTerm == ""}
-  <GroupedGallery waza={data.waza} {grouping} />
+  <GroupedGallery waza={data.waza} {grouping} {showMore} />
 {:else}
   <h2>search results</h2>
-  <Gallery waza={filteredData} />
+  <Gallery waza={filteredData} {showMore} />
 {/if}
 
 <style>
