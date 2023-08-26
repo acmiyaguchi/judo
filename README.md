@@ -18,6 +18,7 @@ b2 authorize-account
 
 # sync everything but the tmp directory and DS_Store files
 b2 sync ./data b2://acm-judo/data --excludeDirRegex data/tmp --excludeRegex DS_Store
+rsync -r data/datasets app/static
 ```
 
 ### olympic results
