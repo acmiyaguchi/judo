@@ -1,5 +1,5 @@
 <script>
-  let entries = ["home", "waza"];
+  let entries = ["home", "waza", "kata"];
 </script>
 
 <svelte:head>

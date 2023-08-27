@@ -13,6 +13,7 @@ See my homepage at [acmiyaguchi.me].
 ## content
 
 - [waza (techniques)](./waza) - Browse animations of techniques by category.
+- [kata (forms)](./kata) - Resources for learning about kata.
 
 ## references and resources
 
