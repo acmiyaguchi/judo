@@ -5,8 +5,9 @@
   export let data;
   let filteredData = [];
   let queryTerm = "";
-  let grouping = "category";
-  let showMore = false;
+  // category is the kodokan-ijf ordering, group is the gokyo-no-waza ordering
+  let grouping = "group";
+  let showMore = true;
 </script>
 
 <h2>options</h2>
@@ -24,6 +25,8 @@
   {#if queryTerm == ""}
     <div>
       ordering:
+      <input type="radio" bind:group={grouping} value="group" id="group" />
+      <label for="group">gokyo-no-waza</label>
       <input
         type="radio"
         bind:group={grouping}
@@ -31,8 +34,6 @@
         id="category"
       />
       <label for="category">Kodokan-IJF</label>
-      <input type="radio" bind:group={grouping} value="group" id="group" />
-      <label for="name">gokyo-no-waza</label>
     </div>
   {/if}
   <div>
