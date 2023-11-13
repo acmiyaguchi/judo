@@ -12,8 +12,6 @@
   </script>
   <meta name="keywords" content="judo, kodokan judo, judo techniques, judo kata, judo waza, gokyo no waza" />
   <meta name="author" content="Anthony Miyaguchi" />
-  <meta name="title" property="og:title" content="Judo Notes" />
-  <meta name="description" property="og:description" content="My study notes for judo." />
   <meta name="image" property="og:image" content="tai-otoshi.gif" />
 </svelte:head>
 
