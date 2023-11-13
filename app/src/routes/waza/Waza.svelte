@@ -7,7 +7,7 @@
   let queryTerm = "";
   // category is the kodokan-ijf ordering, group is the gokyo-no-waza ordering
   let grouping = "group";
-  let showMore = true;
+  let showMore = false;
 </script>
 
 <h2>options</h2>

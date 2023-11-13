@@ -5,7 +5,7 @@
 
 # waza (_techniques_)
 
-The video animations have been derived from the [_KODOKAN JUDO: 100 Techniques_][100-techniques] series by [Kodokan Judo Institute] and the [IJF Academy].
+The video animations have been derived from the [_KODOKAN JUDO: 100 Techniques_][100-techniques] series by [Kodokan Judo Institute] and the [IJF Academy] for educational purpose.
 Techniques are organized by modern Kodokan-IJF or traditional Gokyo classification schemes.
 There are 110 animations, including the 100 techniques and 10 escapes.
 
