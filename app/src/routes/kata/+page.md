@@ -1,9 +1,3 @@
-<svelte:head>
-
-  <meta name="title" property="og:title" content="Judo Notes: Kata (forms)" />
-  <meta name="description" property="og:description" content="Notes on judo kata." />
-</svelte:head>
-
 # kata (_forms_)
 
 Judo kata are formal sets of techniques that help demonstrate principles of judo.

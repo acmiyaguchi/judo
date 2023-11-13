@@ -1,9 +1,3 @@
-<svelte:head>
-
-  <meta name="title" property="og:title" content="Judo Notes" />
-  <meta name="description" property="og:description" content="My study notes for judo." />
-</svelte:head>
-
 # judo notes
 
 Welcome to my Judo page focused on my learning and notes on the martial art and sport.
