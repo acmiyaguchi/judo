@@ -24,3 +24,16 @@ rsync -r data/datasets app/static
 ### olympic results
 
 - https://digital.la84.org/digital/collection/p17103coll8
+
+### detectron experiments
+
+- https://detectron2.readthedocs.io/en/latest/tutorials/install.html
+
+Due to silly constraints, we can't install this directly via poetry.
+Shell into the poetry environment and install it manually:
+See https://github.com/facebookresearch/detectron2/issues/4409
+
+```bash
+poetry shell
+pip install 'git+https://github.com/facebookresearch/detectron2.git'
+```
