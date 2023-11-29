@@ -25,7 +25,7 @@
     </div>
   {/if}
   <div>
-    <b>{waza.name.replace(":", " ")}</b>
+    <a href="/waza/{waza.name}"><b>{waza.name.replace(":", " ")}</b></a>
     <br />
     <i>{waza.translated_name.toLowerCase()}</i>
   </div>
