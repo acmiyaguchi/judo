@@ -15,7 +15,7 @@
 <h2>other techniques</h2>
 
 <div class="search">
-  <Waza {data} bind:queryTerm disableGallery={true} />
+  <Waza {data} bind:queryTerm disableGallery={true} headingLevel={3} />
 </div>
 
 <style>

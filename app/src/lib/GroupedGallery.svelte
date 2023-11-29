@@ -6,11 +6,14 @@
   export let showMore = false;
   // options: category, group
   export let grouping = "category";
+  export let headingLevel = 2;
 
   $: groupedWaza = groupBy(waza, `${grouping}_id`);
 </script>
 
 {#each Object.entries(groupedWaza) as [key, value]}
-  <h2>{value[0][grouping].toLowerCase().replace(" ", "-")}</h2>
+  <svelte:element this={`h${headingLevel}`}>
+    {value[0][grouping].toLowerCase().replace(" ", "-")}
+  </svelte:element>
   <Gallery waza={value} {showMore} />
 {/each}
