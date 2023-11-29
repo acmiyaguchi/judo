@@ -1,5 +1,6 @@
 <script>
   import Fuse from "fuse.js";
+  import { onMount } from "svelte";
   export let data = [];
   export let keys = [];
   export let filteredData = [];
@@ -8,8 +9,7 @@
 
   $: fuse = new Fuse(data, { keys: keys, includeScore: true });
 
-  function handleInput(event) {
-    queryTerm = event.target.value.trim();
+  function handleQueryTerm(queryTerm) {
     if (queryTerm === "") {
       filteredData = data;
       return;
@@ -19,10 +19,19 @@
       .filter((item) => item.score < threshold)
       .map((item) => item.item);
   }
+  function handleInput(event) {
+    queryTerm = event.target.value.trim();
+    handleQueryTerm(queryTerm);
+  }
+
+  // simulate trigger of input event
+  onMount(() => {
+    handleQueryTerm(queryTerm);
+  });
 </script>
 
 search:
-<input type="text" on:input={handleInput} />
+<input type="text" on:input={handleInput} bind:value={queryTerm} />
 {#if filteredData.length}
   {filteredData.length} items
 {/if}

@@ -3,11 +3,16 @@
   import GroupedGallery from "$lib/GroupedGallery.svelte";
   import SearchBar from "$lib/SearchBar.svelte";
   export let data;
-  let filteredData = [];
-  let queryTerm = "";
+
+  export let queryTerm = "";
   // category is the kodokan-ijf ordering, group is the gokyo-no-waza ordering
-  let grouping = "group";
-  let showMore = false;
+  export let grouping = "group";
+  export let showMore = false;
+  export let disableGallery = false;
+
+  let filteredData = [];
+
+  $: showGallery = queryTerm == "" && !disableGallery;
 </script>
 
 <h2>options</h2>
@@ -22,7 +27,7 @@
       bind:queryTerm
     />
   </div>
-  {#if queryTerm == ""}
+  {#if showGallery}
     <div>
       ordering:
       <input type="radio" bind:group={grouping} value="group" id="group" />
@@ -42,7 +47,7 @@
   </div>
 </div>
 
-{#if queryTerm == ""}
+{#if showGallery}
   <GroupedGallery waza={data.waza} {grouping} {showMore} />
 {:else}
   <h2>search results</h2>
