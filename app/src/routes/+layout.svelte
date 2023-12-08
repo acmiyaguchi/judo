@@ -1,19 +1,41 @@
 <script>
+  import { page } from "$app/stores";
+  import { browser } from "$app/environment";
   let entries = ["home", "waza", "kata"];
+
+  // analytics event
+  $: ga_config = {
+    app_name: "judo-notes",
+    screen_name: $page.url.pathname,
+    page_title: $page.url.pathname,
+  };
+  $: browser && gtag("event", "page_view", ga_config);
 </script>
 
 <svelte:head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-43NJXZGJ1M" />
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-43NJXZGJ1M"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag("js", new Date());
     gtag("config", "G-43NJXZGJ1M");
   </script>
-  <meta name="keywords" content="judo, kodokan judo, judo techniques, judo kata, judo waza, gokyo no waza" />
+  <meta
+    name="keywords"
+    content="judo, kodokan judo, judo techniques, judo kata, judo waza, gokyo no waza"
+  />
   <meta name="author" content="Anthony Miyaguchi" />
   <meta name="title" property="og:title" content="Judo Notes" />
-  <meta name="description" property="og:description" content="My study notes for judo." />
+  <meta
+    name="description"
+    property="og:description"
+    content="My study notes for judo."
+  />
 </svelte:head>
 
 <main>
