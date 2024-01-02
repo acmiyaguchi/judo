@@ -6,6 +6,8 @@ I've tried to include a video of the kata demonstrations, alongside instructiona
 
 ## nage-no-kata
 
+See [this page for more details](./kata/nage-no-kata).
+
 _Forms of Throwing - Three representative techniques are chosen from each of five Nage-wazas: Te-waza, Koshi-waza, Ashi-waza, Ma-sutemi-waza and Yoko-sutemi-waza._
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/YOcVfmmMBLY?si=8jWtB6iUo8pygmsd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

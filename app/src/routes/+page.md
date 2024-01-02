@@ -14,6 +14,7 @@ See my homepage at [acmiyaguchi.me].
 
 - [waza (techniques)](./waza) - Browse animations of techniques by category.
 - [kata (forms)](./kata) - Resources for learning about kata.
+  - [nage-no-kata](./kata/nage-no-kata) - Notes on throwing forms.
 
 ## references and resources
 
