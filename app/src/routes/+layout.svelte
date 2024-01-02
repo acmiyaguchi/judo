@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { browser } from "$app/environment";
-  let entries = ["home", "waza", "kata"];
+  let entries = ["home", "waza", "kata", "feedback"];
 
   // analytics event
   $: ga_config = {
