@@ -3,7 +3,7 @@
 Welcome to my Judo page focused on my learning and notes on the martial art and sport.
 I hope you find this information useful!
 Find the source code for this page on [Github].
-See my homepage at [acmiyaguchi.me].
+Reach me at [@acmiyaguchi](https://www.instagram.com/acmiyaguchi/) and visit [my homepage](https://acmiyaguchi.me).
 
 ![tai-otoshi](tai-otoshi.gif)
 
